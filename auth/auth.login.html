@@ -1,0 +1,15 @@
+<div id="form-login">
+    <form name="frmLogin">
+        <div class="form-group">
+            <label>Usuário</label>
+            <input type="text" class="form-control" name="username" ng-model="auth.form.username" required>
+        </div>
+        <div class="form-group">
+            <label>Senha</label>
+            <input type="password" class="form-control" name="password" ng-model="auth.form.password" required>
+        </div>
+        <div class="pull-right">
+            <button class="btn btn-primary" ng-click="auth.signIn()" ng-disabled="frmLogin.$invalid">Entrar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+<form name="frmProduct">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="name" ng-model="product.productService.product.name" required class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="form-group">
+                <label>Url</label>
+                <input type="text" name="url" ng-model="product.productService.product.url" required class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Estoque</label>
+                <input type="number" name="unit_in_stock" ng-model="product.productService.product.unit_in_stock" required class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Valor</label>
+                <input type="number" name="price" ng-model="product.productService.product.price" required class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-warning" ui-sref="product.list">
+                <i class="glyphicon glyphicon-remove"></i>
+            </button>
+            <span class="pull-right">
+                <button class="btn btn-success" ng-click="product.save()" ng-disabled="frmProduct.$invalid">
+                    <i class="glyphicon glyphicon-check"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+
+
+
+
+</form>
